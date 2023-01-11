@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #000;
+    --white: #fff;
+    --blue: #170074;
+    --grey: #707070;
+    --grey-bg: rgb(14, 13, 13);
+}
+
+body{
+    background-color: var(--grey-bg);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    padding: 25px 25px;
+
+}
+
+.logo{
+    width: 40%;
+    margin-bottom: 8px;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.button-scroll{
+    margin-bottom: 16px;
+}
+
+.button-scroll button{
+    border-radius: 77px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    color: var(--white);
+}
+.button-scroll button:first-child{
+    background-color: var(--blue);
+}
+.button-scroll button:last-child{
+    background-color: var(--grey);
+}
+.introduction{
+    background-color: var(--blue);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+.introduction h3{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.introduction p{
+    font-size: 12px;
+}
+
+iframe{
+    border-radius: 20px;
+}
