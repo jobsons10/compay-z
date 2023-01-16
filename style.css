@@ -38,7 +38,7 @@ nav{
     box-shadow: 1px 1px 11px 4px hsl(0deg 0% 76% / 14%);
 
 }
-nav #logo{
+nav .logo{
     width: 35%;
     padding: 20px 25px 15px 25px;
 }
@@ -63,7 +63,7 @@ header h3{
     color: var(--blue);
 }
 
-header button{
+.demo-button{
     padding: 22px 44px;
     border-radius: 11px;
     border: none;
@@ -138,7 +138,9 @@ header img{
 /* SECTION WHY-USE */
 
 .why-use{
-    padding-inline: 20px;
+    margin-inline: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #8c96a8;
 }
 .why-use h2{
     font-family: 'Poppins-Bold';
@@ -158,9 +160,9 @@ header img{
     gap: 16px;
 }
 .reason img{
-    width: 27px;
-    height: 27px;
-    padding-top: 4px;
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
 }
 .reason h3{
     font-family: 'Poppins-Medium';
@@ -173,4 +175,86 @@ header img{
     font-size: 14px;
     color: #8c96a8;
     margin-bottom: 16px;
+}
+
+/* SECTION FLOW */
+.flow{
+    padding: 50px 15px;
+}
+
+.flow .flow-svg{
+    width: 100%;
+}
+
+.flow h2{
+    font-family: 'Poppins-Bold';
+    color: #1b335e;
+    padding-block: 10px;
+}
+.flow p{
+    font-family: 'Poppins-Light';
+    font-size: 14px;
+    color: #1b335e;
+}
+
+.flow h3{
+    font-family: 'Poppins-Bold';
+    font-size: 14px;
+    margin-block: 20px;
+    color: #1b335e;
+}
+
+.oportunities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.oportunity{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.oportunity img{
+    width: 22px;
+}
+.oportunity p{
+    width: 150px;
+}
+
+
+/* SECTION COMPAY-HOME */
+.compay-home{
+    padding-inline: 15px;
+    background-color: #f2fcff;
+}
+.compay-home .logo{
+    width: 150px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.compay-home h2{
+    font-family: 'Poppins-Bold';
+    font-size: 22px;
+    color: var(--blue);
+
+}
+.page-buttons{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    overflow-x: scroll;
+    text-align: center;
+}
+.page-button{
+    width: 50%;
+}
+
+.page-button img{
+    width: 25px;
+    pointer-events: auto;
+    display: block;
+}
+.page img{
+    width: 100%;
 }

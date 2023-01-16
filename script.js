@@ -17,7 +17,6 @@ function previousColumn() {
 
   updateColumn();
 }
-
 function nextColumn() {
   if (currentColumn === 3) {
     currentColumn = 1;
