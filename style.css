@@ -74,10 +74,45 @@ header h3{
     margin: 25px auto 15px auto;
     color: var(--white);
     font-family: 'Poppins-Medium';
+    cursor: pointer;
 }
 header img{
-    width: 100%;
-    margin-top: 24px;
+    width: 90%;
+    display: block;
+    margin: 24px auto 0px auto;
+}
+
+@media screen and (min-width: 650px){
+    nav .logo {
+        width: 150px;
+        margin-left: 50px;
+    }
+    header{
+        display: flex;
+        padding: 150px 50px 50px 50px;
+        gap: 30px;
+    }
+    header .header-h{
+        width: 50%;
+    }
+    header img{
+        width: 50%;
+        height: 10%;
+    }
+    header h1{
+        font-size: 57px;
+        text-align: left;
+        line-height: 1.1;
+    }
+    header h3{
+        text-align: left;
+    }
+    header .demo-button {
+        margin: 25px 0 15px 0;
+        padding: 22px 80px;
+        font-family: 'Poppins-Bold';
+    }
+
 }
 
 /* SECTION USERS */
@@ -124,6 +159,16 @@ header img{
     font-family: 'Poppins-ExtraLight';
 }
 
+@media screen and (min-width: 650px){
+    .users{
+        width: 35%;
+        margin: 0 auto;
+    }
+    .users-slider{
+        cursor: pointer;
+    }
+}
+
 /* SECTION STEP */
 .step{
     padding-inline: 15px;
@@ -134,6 +179,26 @@ header img{
     font-size: 20px;
     color: var(--blue);
     margin-bottom: 24px;
+}
+@media screen and (min-width: 650px){
+    .step{
+        display: flex;
+        margin-top: 80px;
+        gap: 35px;
+        padding-inline: 80px;
+        height: 400px;
+    }
+    .step h2{
+        width: 40%;
+        font-size: 44px;
+        line-height: 1.1;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .step div{
+        width: 60%;
+    }
 }
 
 /* SECTION WHY-USE */
@@ -392,3 +457,4 @@ header img{
 #back-top span{
     font-family: 'Poppins-Regular';
 }
+
