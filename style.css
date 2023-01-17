@@ -219,7 +219,6 @@ header img{
     display: flex;
     flex-direction: column;
     gap: 12px;
-
 }
 .reason{
     display: flex;
@@ -241,6 +240,21 @@ header img{
     font-size: 14px;
     color: #8c96a8;
     margin-bottom: 16px;
+}
+@media screen and (min-width: 650px){
+    .why-use{
+        padding-inline: 150px;
+    } 
+    .reasons{
+        margin-top: 50px;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .reason{
+        width: 45%;
+    }
 }
 
 /* SECTION FLOW */
