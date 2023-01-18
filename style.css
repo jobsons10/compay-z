@@ -45,8 +45,8 @@ nav .logo{
 }
 header{
     width: 100vw;
-    background-image: linear-gradient(180deg,#f1f4ff,hsla(0,0%,100%,0));
-    padding: 80px 10px 25px 10px;
+    background-image: linear-gradient(180deg,#f1f4ff,hsla(0,0%,100%,0)), url('./img/lines-bg.svg');
+    padding: 80px 10px;
 }
 
 header h1{
@@ -75,6 +75,10 @@ header h3{
     color: var(--white);
     font-family: 'Poppins-Medium';
     cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.demo-button:hover{
+    background-color: #4b21c9;
 }
 header img{
     width: 90%;
@@ -89,7 +93,7 @@ header img{
     }
     header{
         display: flex;
-        padding: 150px 50px 50px 50px;
+        padding: 150px 50px 100px 50px;
         gap: 30px;
     }
     header .header-h{
@@ -114,7 +118,11 @@ header img{
     }
 
 }
-
+@media screen and (min-width: 1350px) {
+    body{
+        padding-inline: 350px;
+    }
+}
 /* SECTION USERS */
 .users-section{
     padding-inline: 35px;
@@ -301,6 +309,32 @@ header img{
 .oportunity p{
     width: 150px;
 }
+@media screen and (min-width: 650px){
+    .flow{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-inline: 65px;
+        gap: 20px;
+    }
+    .flow .flow-svg{
+        width: 55%;
+    }
+    .flow-explain{
+        width: 50%;
+    }
+    .flow h2{
+        font-size: 44px;
+        line-height: 1.1;
+        margin-bottom: 21px;
+    }
+    .flow p {
+        font-family: 'Poppins-Regular';
+    }
+    .flow .demo-button{
+        margin: 25px 0 15px 0;
+        padding: 22px 80px;
+    }
+}
 
 
 /* SECTION COMPAY-HOME */
@@ -347,18 +381,15 @@ header img{
 .page-button img{
     width: 22px;
 }
-.page-content{
-    background-color: var(--white);
-    padding: 30px 25px;
-}
 .page{
-    opacity: 0;
     display: none;
     transition: all .5s ease;
+    background-color: var(--white);
+    padding: 16px;
 }
 .page.selected{
     opacity: 1;
-    display: block;
+    display: flex;
 }
 .page-icon{
     width: 60px;
@@ -376,6 +407,7 @@ header img{
 .page-img{
     width: 100%;
     margin-top: 16px;
+    border-radius: 14px ;
 }
 
 .page h2{
@@ -402,6 +434,44 @@ header img{
     font-family: 'Poppins-Regular';
     color: var(--blue);
     margin-bottom: 16px;
+}
+
+@media screen and (min-width: 650px){
+    .title{
+        display: flex;
+        padding: 10px 80px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .title .logo{
+        width: 25%;
+        margin: 0;
+    }
+    .title h2{
+        width: 70%;
+    }
+    .page-button{
+        cursor: pointer;
+    }
+    .page{
+        justify-content: center;
+        gap: 50px;
+        padding-block: 24px;
+    }
+    .page-container{
+        width: 45%;
+        padding-top: 50px;
+        padding-left: 35px;
+    }
+    .page-img{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .page.selected {
+        display: block;
+    }
 }
 
 /* SECTION RESULTs */
@@ -472,3 +542,10 @@ header img{
     font-family: 'Poppins-Regular';
 }
 
+@media screen and (min-width: 650px){
+    .results h2{
+        font-size: 44px;
+        text-align: center;
+        line-height: 1.1;
+    }
+}
