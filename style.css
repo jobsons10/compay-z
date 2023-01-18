@@ -116,12 +116,6 @@ header img{
         padding: 22px 80px;
         font-family: 'Poppins-Bold';
     }
-
-}
-@media screen and (min-width: 1350px) {
-    body{
-        padding-inline: 350px;
-    }
 }
 /* SECTION USERS */
 .users-section{
