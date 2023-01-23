@@ -19,6 +19,15 @@
     src: url(./fonts/Poppins-ExtraLight.ttf);
 }
 
+@keyframes fadein {
+    from { 
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -173,7 +182,7 @@ header img{
 
 /* SECTION STEP */
 .step{
-    padding-inline: 15px;
+    padding-inline: 10px;
 }
 .step h2{
     text-align: center;
@@ -225,6 +234,7 @@ header img{
 .reason{
     display: flex;
     gap: 16px;
+    animation: fadein 2s;
 }
 .reason img{
     width: 30px;
@@ -466,6 +476,10 @@ header img{
     .page.selected {
         display: block;
     }
+
+    .step iframe {
+        width: 95vw;
+    }
 }
 
 /* SECTION RESULTs */
@@ -542,4 +556,6 @@ header img{
         text-align: center;
         line-height: 1.1;
     }
+
+
 }
